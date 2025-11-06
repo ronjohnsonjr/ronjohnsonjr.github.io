@@ -24,8 +24,8 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
       rel="stylesheet"
     />
   </head>
-  <body style="background-color: #1D1E27; color: #EDF2F4;">
-    <header class="border-b backdrop-blur-md" style="border-color: #4B4E53; background-color: rgba(29, 30, 39, 0.9);">
+  <body style="background-color: #0A0A0A; color: #EDF2F4;">
+    <header class="border-b backdrop-blur-md" style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.9);">
       <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="/" class="text-lg font-semibold tracking-tight" style="color: #EDF2F4;">
           {siteConfig.name}
@@ -49,8 +49,8 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
     </header>
 
     <main class="pb-24">
-      <section class="relative overflow-hidden" style="background-color: #1D1E27;">
-        <div class="absolute inset-0" style="background: linear-gradient(to bottom right, #1D1E27, #1D1E27, #1D1E27);"></div>
+      <section class="relative overflow-hidden" style="background-color: #0A0A0A;">
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom right, #0A0A0A, #0A0A0A, #0A0A0A);"></div>
         <div class="relative mx-auto flex max-w-5xl flex-col gap-10 px-6 py-20" style="color: #EDF2F4;">
           <div class="max-w-3xl space-y-6">
             <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs uppercase tracking-[0.2em]" style="background-color: rgba(75, 78, 83, 0.3);">
@@ -111,7 +111,7 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
       <section class="mx-auto mt-20 max-w-5xl px-6">
         <div class="grid gap-6 rounded-3xl border p-8 sm:grid-cols-2" style="border-color: #4B4E53; background-color: #4B4E53;">
           {metrics.map((metric) => (
-            <div class="rounded-2xl p-6" style="background-color: #1D1E27;">
+            <div class="rounded-2xl p-6" style="background-color: #0A0A0A;">
               <p class="text-4xl font-semibold" style="color: #EDF2F4;">{metric.value}</p>
               <p class="mt-2 text-sm uppercase tracking-[0.2em]" style="color: #4B4E53;">{metric.label}</p>
             </div>
@@ -132,7 +132,7 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
               <div class="rounded-3xl border p-8 shadow-sm transition-shadow hover:shadow-md" style="border-color: #4B4E53; background-color: #4B4E53;">
                 <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <h3 class="text-2xl font-semibold" style="color: #EDF2F4;">{service.name}</h3>
-                  <span class="inline-flex items-center rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em]" style="background-color: #1D1E27; color: #EDF2F4;">
+                  <span class="inline-flex items-center rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em]" style="background-color: #0A0A0A; color: #EDF2F4;">
                     Advisory + Delivery
                   </span>
                 </div>
@@ -169,7 +169,7 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
                 <p class="mt-4 text-sm leading-6" style="color: #EDF2F4;">{study.summary}</p>
                 <ul class="mt-6 grid gap-3 sm:grid-cols-3">
                   {study.impact.map((item) => (
-                    <li class="rounded-2xl p-4 text-sm font-medium" style="background-color: #1D1E27; color: #EDF2F4;">{item}</li>
+                    <li class="rounded-2xl p-4 text-sm font-medium" style="background-color: #0A0A0A; color: #EDF2F4;">{item}</li>
                   ))}
                 </ul>
               </div>
@@ -183,7 +183,7 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
           <h2 class="text-3xl font-semibold" style="color: #EDF2F4;">What partners say</h2>
           <div class="mt-8 grid gap-6 md:grid-cols-2">
             {testimonials.map((testimonial) => (
-              <blockquote class="rounded-2xl border p-6 text-sm" style="border-color: #1D1E27; background-color: #1D1E27; color: #EDF2F4;">
+              <blockquote class="rounded-2xl border p-6 text-sm" style="border-color: #0A0A0A; background-color: #0A0A0A; color: #EDF2F4;">
                 <p class="text-pretty leading-6">"{testimonial.quote}"</p>
                 <footer class="mt-4 text-xs font-semibold uppercase tracking-[0.2em]" style="color: #4B4E53;">
                   {testimonial.name} • {testimonial.role}
@@ -208,7 +208,7 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
               {experience.map((role) => (
                 <div class="relative rounded-3xl border p-8 shadow-sm" style="border-color: #4B4E53; background-color: #4B4E53;">
                   <div class="sm:absolute sm:-left-1 sm:top-8 sm:flex sm:h-4 sm:w-4 sm:-translate-x-1/2 sm:items-center sm:justify-center">
-                    <span class="hidden h-3 w-3 rounded-full border-2 sm:inline-block" style="border-color: #4B4E53; background-color: #1D1E27;"></span>
+                    <span class="hidden h-3 w-3 rounded-full border-2 sm:inline-block" style="border-color: #4B4E53; background-color: #0A0A0A;"></span>
                   </div>
                   <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                     <div>
@@ -264,7 +264,7 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
       </section>
     </main>
 
-    <footer class="border-t py-6" style="border-color: #4B4E53; background-color: #1D1E27;">
+    <footer class="border-t py-6" style="border-color: #4B4E53; background-color: #0A0A0A;">
       <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 text-sm sm:flex-row" style="color: #4B4E53;">
         <span>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</span>
         <div class="flex items-center gap-4">
