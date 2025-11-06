@@ -1,6 +1,6 @@
 # Ronald Johnson, Jr. Portfolio
 
-This repository powers [sennajin.github.io](https://sennajin.github.io/) using the
+This repository powers [sennajin.github.io](https://ronjohnsonjr.github.io/) using the
 [DevPortfolio](https://github.com/RyanFitzgerald/devportfolio) Astro template. The initial
 commit brings the template into this repo so we can iterate on the content and styling to
 match Sena's professional profile.
