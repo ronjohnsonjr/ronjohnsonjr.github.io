@@ -6,16 +6,16 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasCertifications = siteConfig.certifications && siteConfig.certifications.length > 0;
 ---
 
-<footer class="relative bg-slate-900 border-t border-slate-800">
+<footer class="relative border-t" style="background-color: #1D1E27; border-color: #4B4E53;">
   <div class="mx-auto max-w-6xl px-6 py-12 lg:px-8">
     <div
       class="flex flex-col md:flex-row md:items-center md:justify-between gap-8"
     >
       <div class="flex flex-col gap-4">
-        <h3 class="text-2xl font-bold text-slate-100">
+        <h3 class="text-2xl font-bold" style="color: #EDF2F4;">
           {siteConfig.name}
         </h3>
-        <p class="text-base text-slate-400">
+        <p class="text-base" style="color: #4B4E53;">
           {siteConfig.title}
         </p>
         <div class="flex gap-x-6">
@@ -24,7 +24,8 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
               <a
                 href={`mailto:${siteConfig.social.email}`}
                 aria-label="Email"
-                class="text-slate-400 transition-colors duration-300 hover:text-[var(--accent-color)]"
+                class="transition-colors duration-300 hover:text-[var(--accent-color)]"
+                style="color: #4B4E53;"
                 style={`--accent-color: ${siteConfig.accentColor}`}
               >
                 <svg
@@ -55,7 +56,8 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                class="text-slate-400 transition-colors duration-300 hover:text-[var(--accent-color)]"
+                class="transition-colors duration-300 hover:text-[var(--accent-color)]"
+                style="color: #4B4E53;"
                 style={`--accent-color: ${siteConfig.accentColor}`}
               >
                 <svg
@@ -83,19 +85,28 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
         <nav class="flex gap-x-8">
           <a
             href="/professional/"
-            class="text-sm text-slate-400 hover:text-slate-200 transition-colors"
+            class="text-sm transition-colors"
+            style="color: #4B4E53;"
+            onmouseover="this.style.color='#EDF2F4';"
+            onmouseout="this.style.color='#4B4E53';"
             >Professional</a
           >
           <a
             href="#about"
-            class="text-sm text-slate-400 hover:text-slate-200 transition-colors"
+            class="text-sm transition-colors"
+            style="color: #4B4E53;"
+            onmouseover="this.style.color='#EDF2F4';"
+            onmouseout="this.style.color='#4B4E53';"
             >About</a
           >
           {
             hasProjects && (
               <a
                 href="#projects"
-                class="text-sm text-slate-400 hover:text-slate-200 transition-colors"
+                class="text-sm transition-colors"
+                style="color: #4B4E53;"
+                onmouseover="this.style.color='#EDF2F4';"
+                onmouseout="this.style.color='#4B4E53';"
               >
                 Projects
               </a>
@@ -105,7 +116,10 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
             hasExperience && (
               <a
                 href="#experience"
-                class="text-sm text-slate-400 hover:text-slate-200 transition-colors"
+                class="text-sm transition-colors"
+                style="color: #4B4E53;"
+                onmouseover="this.style.color='#EDF2F4';"
+                onmouseout="this.style.color='#4B4E53';"
               >
                 Experience
               </a>
@@ -115,14 +129,17 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
             hasCertifications && (
               <a
                 href="#certifications"
-                class="text-sm text-slate-400 hover:text-slate-200 transition-colors"
+                class="text-sm transition-colors"
+                style="color: #4B4E53;"
+                onmouseover="this.style.color='#EDF2F4';"
+                onmouseout="this.style.color='#4B4E53';"
               >
                 Certifications
               </a>
             )
           }
         </nav>
-        <p class="text-sm text-slate-500">
+        <p class="text-sm" style="color: #4B4E53;">
           © {new Date().getFullYear()}
           {siteConfig.name}. All rights reserved.
         </p>
@@ -132,10 +149,11 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
 
   <!-- Decorative pattern -->
   <div class="absolute inset-0 -z-10 overflow-hidden">
-    <svg
-      aria-hidden="true"
-      class="absolute bottom-0 left-0 w-full h-24 text-slate-800"
-    >
+      <svg
+        aria-hidden="true"
+        class="absolute bottom-0 left-0 w-full h-24"
+        style="color: #4B4E53;"
+      >
       <pattern
         id="footer-pattern"
         x="0"

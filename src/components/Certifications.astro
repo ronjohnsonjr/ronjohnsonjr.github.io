@@ -9,7 +9,7 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
       <div>
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           <div class="lg:col-span-4">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-slate-100">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold" style="color: #EDF2F4;">
               Certifications
             </h2>
             <div
@@ -21,10 +21,12 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
           <div class="lg:col-span-8">
             <div class="space-y-8">
               {siteConfig.certifications.map((cert) => (
-                <div class="bg-slate-800 rounded-lg shadow-sm border border-slate-700 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
+                <div class="rounded-lg shadow-sm border p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300"
+                  style="background-color: #4B4E53; border-color: #4B4E53;"
+                >
                   <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                     <div>
-                      <h3 class="text-lg sm:text-xl font-semibold text-slate-100">
+                      <h3 class="text-lg sm:text-xl font-semibold" style="color: #EDF2F4;">
                         {cert.name}
                       </h3>
                       <p
@@ -34,13 +36,13 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
                         {cert.issuer}
                       </p>
                     </div>
-                    <span class="text-xs sm:text-sm text-slate-400 mt-2 sm:mt-0">
+                    <span class="text-xs sm:text-sm mt-2 sm:mt-0" style="color: #EDF2F4;">
                       {cert.dateRange}
                     </span>
                   </div>
 
                   {cert.credentialId && (
-                    <p class="text-sm text-slate-400 mb-2">
+                    <p class="text-sm mb-2" style="color: #EDF2F4;">
                       Credential ID: <span class="font-mono">{cert.credentialId}</span>
                     </p>
                   )}
@@ -50,7 +52,10 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
                       href={cert.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-sm text-red-400 hover:text-red-300 underline"
+                      class="text-sm underline"
+                      style={`color: ${siteConfig.accentColor};`}
+                      onmouseover="this.style.color='#FF0000';"
+                      onmouseout={`this.style.color='${siteConfig.accentColor}';`}
                     >
                       View credential
                     </a>
