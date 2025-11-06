@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Senior Software Development Engineer in Test (SDET) / Systems Engineer",
   description:
     "QA automation engineer and systems integration specialist with 20+ years spanning defense, SaaS, and cloud environments. Expert in designing scalable Python-based automation frameworks for regulated and security-sensitive systems.",
-  accentColor: "#C80018", /* Fire engine red */
+  accentColor: "#650304", /* Blood red - darker, more readable */
   social: {
     email: "johnsonjrre@gmail.com",
     phone: "443-668-1024",
