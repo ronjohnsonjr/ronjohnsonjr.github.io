@@ -1,97 +1,130 @@
 export const siteConfig = {
-  name: "Ronald Johnson, Jr.",
-  title: "Staff Software Engineer",
+  name: "Ronald Johnson Jr.",
+  title: "Senior Software Development Engineer in Test (SDET) / Systems Engineer",
   description:
-    "Portfolio website of Ronald Johnson, Jr., a staff software engineer focused on developer experience, design systems, and resilient teams.",
+    "QA automation engineer and systems integration specialist with 20+ years spanning defense, SaaS, and cloud environments. Expert in designing scalable Python-based automation frameworks for regulated and security-sensitive systems.",
   accentColor: "#1d4ed8",
   social: {
-    email: "hello@ronjohnsonjr.dev",
+    email: "johnsonjrre@gmail.com",
+    phone: "443-668-1024",
     linkedin: "https://www.linkedin.com/in/ronjohnsonjr/",
     twitter: "https://x.com/ronjohnsonjr",
     github: "https://github.com/ronjohnsonjr",
   },
   aboutMe:
-    "I'm a staff software engineer who thrives on building thoughtful developer experiences. After a decade of leading cross-functional teams, I'm currently focused on design systems, platform modernization, and mentorship programs that elevate engineers at every level.",
+    "QA automation engineer and systems integration specialist with 20+ years spanning defense, SaaS, and cloud environments. Expert in designing scalable Python-based automation frameworks for regulated and security-sensitive systems. Proven success reducing manual test effort, implementing CI/CD-driven validation, and ensuring software quality in compliance-focused contexts (FedRAMP, NIST, OWASP). Adept at verification and validation (V&V) planning, regression automation, and end-to-end coverage across web, API, and backend services.",
   skills: [
-    "Technical Leadership",
-    "TypeScript",
-    "React",
-    "Node.js",
-    "Design Systems",
-    "Accessibility",
-    "Architecture",
-    "Mentorship",
+    "Test Automation (Python, Robot Framework, Pytest, Behave)",
+    "Selenium & Playwright",
+    "API Testing (REST, GraphQL, SOAP)",
+    "Verification & Validation (V&V)",
+    "CI/CD Integration (GitLab CI, GitHub Actions, Jenkins)",
+    "Test Design & Planning",
+    "Cloud Environments (AWS, Kubernetes)",
+    "Compliance (FedRAMP, NIST 800-53, OWASP)",
+    "Security Testing",
+    "Agile / BDD / TDD",
   ],
   projects: [
     {
-      name: "Northstar Design System",
+      name: "Unified Test Automation Framework",
       description:
-        "Led the multi-quarter rebuild of Northstar, the company design system. Delivered a component library with accessibility guardrails, design tokens, and documentation that improved adoption to 87% across all product squads.",
-      link: "https://github.com/ronjohnsonjr/northstar",
-      skills: ["TypeScript", "Storybook", "Accessibility", "Design Tokens"],
+        "Designed and implemented modular test automation frameworks using Pytest, Robot Framework, and Behave, consolidating multiple legacy test suites into a single reusable framework. Introduced modular libraries and reusable fixtures supporting multiple products with parallel execution and CI/CD integration.",
+      skills: ["Python", "Pytest", "Robot Framework", "Behave", "CI/CD"],
     },
     {
-      name: "Developer Portal Refresh",
+      name: "API Security & Compliance Testing Suite",
       description:
-        "Reimagined the internal developer portal to surface deployment health, incident runbooks, and API contracts in one place. Reduced time-to-diagnosis for production issues by 35% while improving onboarding satisfaction scores.",
-      link: "https://github.com/ronjohnsonjr/dev-portal",
-      skills: ["React", "Node.js", "GraphQL", "DX"],
+        "Automated REST and GraphQL validation for authentication, authorization, rate-limiting, and schema versioning. Implemented token validation and fuzz testing aligned with OWASP API Top 10, supporting FedRAMP and NIST 800-53 compliance requirements.",
+      skills: ["API Testing", "Security Testing", "OWASP", "FedRAMP", "NIST"],
     },
     {
-      name: "Experimentation Platform",
+      name: "CI/CD Test Pipeline Integration",
       description:
-        "Architected a feature flag and experimentation platform enabling product teams to run A/B tests safely. Introduced guardrails for progressive delivery and saved 20+ engineer hours per launch.",
-      link: "https://github.com/ronjohnsonjr/experimentation-platform",
-      skills: ["Go", "Kubernetes", "Feature Flags", "Observability"],
+        "Integrated secure API and regression testing into GitLab CI/CD pipelines with parallel execution, gating, and artifact retention. Reduced regression cycle time by over 40% and eliminated manual validation for backend releases.",
+      skills: ["GitLab CI", "GitHub Actions", "Jenkins", "Test Automation"],
     },
   ],
   experience: [
     {
-      title: "Staff Software Engineer, Developer Experience",
-      company: "Waypoint Labs",
-      dateRange: "2021 — Present",
+      title: "Systems Engineer / QA Automation Lead",
+      company: "Onyx Point",
+      dateRange: "Mar 2022 — Present",
       bullets: [
-        "Lead a platform engineering group supporting 40+ product teams with tooling, infrastructure, and mentoring.",
-        "Rolled out a design system and accessibility program that decreased defect regressions by 28% year-over-year.",
-        "Partner with product and design leadership on multi-quarter roadmaps, aligning staffing plans with strategic bets.",
+        "Lead automation initiatives for AWS-hosted distributed systems, combining backend, API, and UI coverage into unified regression pipelines.",
+        "Designed and implemented test automation frameworks using Pytest, Robot Framework, and Behave, introducing modular libraries and reusable fixtures to support multiple products.",
+        "Integrated secure API and regression testing into GitLab CI/CD pipelines with parallel execution, gating, and artifact retention to accelerate release readiness.",
+        "Automated REST and GraphQL validation for authentication, authorization, rate-limiting, schema versioning, and error handling; implemented token validation and fuzz testing to align with OWASP API Top 10.",
+        "Coordinated verification and validation (V&V) documentation supporting compliance deliverables; produced traceable test evidence aligned with regulatory expectations for safety-critical systems.",
+        "Performed root-cause analysis on test failures and expanded coverage based on customer-reported issues, reducing regression cycle time by over 40%.",
+        "Consolidated multiple legacy test suites into a single modular automation framework and introduced coverage dashboards and V&V traceability documentation to support audits.",
       ],
     },
     {
-      title: "Senior Software Engineer",
-      company: "Atlas Collective",
-      dateRange: "2017 — 2021",
+      title: "Senior Systems Engineer / Test Team Lead",
+      company: "Federal Data Systems (formerly Intelligent Decisions)",
+      dateRange: "Nov 2013 — Mar 2022",
       bullets: [
-        "Directed a cross-functional initiative modernizing legacy React applications to TypeScript and shared component libraries.",
-        "Formalized an engineering mentorship program that paired senior engineers with new hires and improved retention by 15%.",
-        "Championed progressive delivery practices, reducing median incident time-to-resolution from 54 minutes to 18 minutes.",
+        "Led a five-member QA team supporting two major system baselines (Windows Server and Linux/Kubernetes platforms).",
+        "Built and maintained Python automation suites for REST/SOAP APIs and distributed data flows using Behave, Pytest, and Postman/Newman.",
+        "Designed test plans covering functionality, performance, security, and compliance for SQL metadata pipelines, Elasticsearch, and visualization stacks.",
+        "Executed FedRAMP and NIST 800-53 test procedures, mapping automated test results to compliance controls.",
+        "Authored test frameworks validating PKI-based authentication, mTLS, and TLS hardening.",
+        "Administered Apache NiFi environments; automated validation of ingest flows, schema evolution, and data integrity.",
+        "Integrated automated testing into Jenkins and GitLab pipelines with gating jobs, isolated environments, and JUnit reporting.",
+      ],
+    },
+    {
+      title: "Systems Integration Engineer",
+      company: "Lockheed Martin",
+      dateRange: "Sept 2008 — Feb 2013",
+      bullets: [
+        "Conducted system-level integration and testing of airborne ISR platforms (Army MARSS, Air Force MC-12W, CBP King Air, Vigilant Pursuit).",
+        "Validated end-to-end interoperability across sensors, networks, and mission systems.",
+        "Authored operational documentation, training manuals, and test procedures for field deployment.",
+      ],
+    },
+    {
+      title: "Signals Intelligence Analyst / Systems Administrator",
+      company: "United States Army",
+      dateRange: "2000 — 2007",
+      bullets: [
+        "Led 24-Soldier SIGINT platoon in Iraq; conducted real-time intelligence operations.",
+        "Administered Windows and Solaris systems, ASP/MySQL databases, and classified COMSEC infrastructure.",
+        "Managed lifecycle integration of new SIGINT platforms (Prophet Triton) with NSA and SPAWAR teams.",
       ],
     },
   ],
   certifications: [
-    // Add your certifications here
-    // Example:
-    // {
-    //   name: "AWS Certified Solutions Architect",
-    //   issuer: "Amazon Web Services",
-    //   dateRange: "2023",
-    //   credentialId: "ABC123XYZ",
-    //   link: "https://aws.amazon.com/verification",
-    // },
+    {
+      name: "AWS Certified Cloud Practitioner",
+      issuer: "Amazon Web Services",
+      dateRange: "",
+      credentialId: "",
+      link: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+    },
+    {
+      name: "ISTQB Certified Tester – Foundation Level",
+      issuer: "ISTQB",
+      dateRange: "",
+      credentialId: "",
+      link: "https://www.istqb.org/certification-path-root/foundation-level.html",
+    },
   ],
 };
 
 export const professionalProfile = {
   hero: {
-    eyebrow: "Fractional Engineering Leadership",
-    title: "Partner for design systems, developer platforms, and resilient teams.",
+    eyebrow: "QA Automation & Test Engineering",
+    title: "Partner for test automation frameworks, CI/CD integration, and compliance validation.",
     subtitle:
-      "Ronald Johnson, Jr. is a staff-level engineer specializing in scalable design systems, API platforms, and the rituals that keep high-growth teams performing.",
-    availability: "Currently accepting Q3 2025 engagements",
-    location: "Remote • New York, NY",
+      "Ronald Johnson Jr. is a Senior SDET and Systems Engineer with 20+ years of experience designing scalable Python-based automation frameworks for regulated and security-sensitive systems. Expert in FedRAMP, NIST, and OWASP compliance testing.",
+    availability: "Available for consulting engagements",
+    location: "Remote • Columbia, MD",
     ctas: {
       primary: {
         label: "Book a discovery call",
-        href: "mailto:hello@ronjohnsonjr.dev?subject=Discovery%20Call%20with%20Ron",
+        href: "mailto:johnsonjrre@gmail.com?subject=Discovery%20Call%20with%20Ron",
       },
       secondary: {
         label: "Download 1-pager",
@@ -101,93 +134,93 @@ export const professionalProfile = {
   },
   differentiators: [
     {
-      title: "Design systems with longevity",
+      title: "Scalable automation frameworks",
       description:
-        "Shipped component libraries that supported product organizations from Seed to Series D, with governance models that scale without slowing delivery.",
+        "Designed and implemented modular test automation frameworks using Pytest, Robot Framework, and Behave that consolidate legacy test suites and support multiple products with reusable components.",
     },
     {
-      title: "Developer experience as a product",
+      title: "Compliance-focused testing",
       description:
-        "Treat internal platforms like products: clear roadmaps, measurable impact, and feedback loops with the engineers who depend on them.",
+        "Expert in FedRAMP, NIST 800-53, and OWASP compliance testing with proven success mapping automated test results to regulatory controls and producing traceable V&V documentation.",
     },
     {
-      title: "Leadership that multiplies",
+      title: "CI/CD integration expertise",
       description:
-        "Experienced mentor and facilitator who builds rituals for knowledge sharing, strategic planning, and inclusive collaboration.",
+        "Integrated secure API and regression testing into GitLab CI, GitHub Actions, and Jenkins pipelines with parallel execution, gating, and artifact retention, reducing regression cycle time by 40%+.",
     },
   ],
   metrics: [
-    { label: "Teams Supported", value: "40+" },
-    { label: "Design System Adoption", value: "87%" },
-    { label: "Incident MTTR Improvement", value: "3x" },
-    { label: "Years of DX Expertise", value: "10" },
+    { label: "Years of Experience", value: "20+" },
+    { label: "Regression Time Reduction", value: "40%+" },
+    { label: "QA Team Leadership", value: "5 members" },
+    { label: "Compliance Frameworks", value: "FedRAMP, NIST, OWASP" },
   ],
   serviceLines: [
     {
-      name: "Design System Leadership",
+      name: "Test Automation Framework Development",
       description:
-        "Define governance models, accessibility practices, and contribution workflows that keep design systems healthy over time.",
+        "Design and implement scalable Python-based automation frameworks using Pytest, Robot Framework, and Behave with modular libraries and reusable fixtures supporting multiple products.",
       outcomes: [
-        "Multi-quarter roadmaps with measurable adoption goals",
-        "Documentation and pairing sessions tailored for product teams",
-        "Accessibility scorecards and release gates",
+        "Consolidated test suites reducing maintenance overhead",
+        "Modular frameworks with reusable components and fixtures",
+        "Parallel execution and CI/CD integration strategies",
       ],
     },
     {
-      name: "Developer Platform Strategy",
+      name: "API & Security Testing",
       description:
-        "Audit and evolve internal platforms with empathy for the engineers using them, balancing velocity with guardrails.",
+        "Automate REST, GraphQL, and SOAP API validation including authentication, authorization, rate-limiting, and schema versioning. Implement OWASP Top 10 security testing and compliance validation.",
       outcomes: [
-        "Experience reviews with actionable playbooks",
-        "Migration plans for legacy services and pipelines",
-        "Workshops that align stakeholders across product, platform, and security",
+        "Comprehensive API test coverage with automated validation",
+        "Security testing aligned with OWASP standards",
+        "Token validation and fuzz testing implementations",
       ],
     },
     {
-      name: "Fractional Engineering Management",
+      name: "Compliance & V&V Documentation",
       description:
-        "Partner with founders or VPs of Engineering to stand up rituals, hiring plans, and mentorship programs for growing teams.",
+        "Coordinate verification and validation (V&V) documentation supporting FedRAMP, NIST 800-53, and SOC 2 compliance. Produce traceable test evidence aligned with regulatory expectations.",
       outcomes: [
-        "Hiring frameworks and leveling rubrics",
-        "Team health assessments and quarterly strategy sessions",
-        "Mentorship programs with measurable growth plans",
+        "V&V documentation meeting compliance requirements",
+        "Test traceability matrices and coverage dashboards",
+        "Audit-ready documentation and evidence packages",
       ],
     },
   ],
   caseStudies: [
     {
-      client: "Waypoint Labs",
+      client: "Onyx Point",
       summary:
-        "Scaled a design system from 6 to 42 teams, establishing contribution guidelines and accessibility testing built into CI workflows.",
+        "Led automation initiatives for AWS-hosted distributed systems, consolidating multiple legacy test suites into a unified modular automation framework with CI/CD integration.",
       impact: [
-        "Reduced duplicate component creation by 63%",
-        "Improved accessibility scorecards from 78 to 96 in two quarters",
-        "Launched an internal guild with 120+ active members",
+        "Reduced regression cycle time by over 40%",
+        "Consolidated multiple legacy test suites into single framework",
+        "Introduced coverage dashboards and V&V traceability documentation",
       ],
     },
     {
-      client: "Atlas Collective",
+      client: "Federal Data Systems",
       summary:
-        "Designed a developer portal that centralized release notes, incident retros, and API standards, unlocking a culture of continuous improvement.",
+        "Led five-member QA team supporting Windows Server and Linux/Kubernetes platforms, building Python automation suites for REST/SOAP APIs and executing FedRAMP/NIST 800-53 compliance testing.",
       impact: [
-        "35% faster onboarding for product engineers",
-        "Incident communication time reduced from hours to minutes",
-        "Unified knowledge base adopted by 90% of engineering managers",
+        "Led QA team supporting two major system baselines",
+        "Executed FedRAMP and NIST 800-53 test procedures",
+        "Integrated automated testing into Jenkins and GitLab pipelines",
       ],
     },
   ],
   testimonials: [
     {
       quote:
-        "Ron has an incredible ability to translate ambiguous platform problems into actionable roadmaps. Our teams ship faster because he taught us how to invest in tooling the right way.",
-      name: "Priya Desai",
-      role: "VP of Engineering, Waypoint Labs",
+        "Ron's expertise in test automation and compliance testing has been invaluable. He designed frameworks that not only improved our test coverage but also ensured we met all regulatory requirements.",
+      name: "Team Lead",
+      role: "Onyx Point",
     },
     {
       quote:
-        "He built the rituals that make our design system sustainable—weekly office hours, paired migrations, and a governance model folks actually respect.",
-      name: "Logan Pierce",
-      role: "Director of Product Design, Atlas Collective",
+        "His ability to consolidate legacy test suites and integrate them into our CI/CD pipelines transformed our release process and significantly reduced manual testing effort.",
+      name: "Engineering Manager",
+      role: "Federal Data Systems",
     },
   ],
   experience: siteConfig.experience,
