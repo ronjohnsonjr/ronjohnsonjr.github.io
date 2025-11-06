@@ -148,6 +148,20 @@ import { siteConfig } from "../config";
       >
         {siteConfig.title}
       </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 animate-fade-in animation-delay-600">
+        <a
+          href="/professional/"
+          class="inline-flex items-center justify-center rounded-full bg-gray-900 px-6 py-2.5 text-sm sm:text-base font-semibold text-white transition-colors hover:bg-gray-700"
+        >
+          View professional profile
+        </a>
+        <a
+          href={`mailto:${siteConfig.social.email}`}
+          class="inline-flex items-center justify-center rounded-full border border-gray-300 px-6 py-2.5 text-sm sm:text-base font-semibold text-gray-700 transition-colors hover:border-gray-400 hover:text-gray-900"
+        >
+          Start a conversation
+        </a>
+      </div>
     </div>
   </div>
   <div
