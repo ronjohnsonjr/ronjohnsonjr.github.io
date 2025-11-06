@@ -30,7 +30,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                       class={`block relative p-4 sm:p-6 md:p-8 bg-slate-800 rounded-xl sm:rounded-2xl border border-slate-700 transition-all duration-300 hover:bg-slate-700 hover:shadow-xl hover:border-slate-600 hover:-translate-y-1`}
                     >
                       {project.link && (
-                        <div class="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 flex items-center justify-center bg-blue-600 rounded-full text-white transition-all duration-300 group-hover:bg-blue-700">
+                        <div class="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 flex items-center justify-center bg-red-600 rounded-full text-white transition-all duration-300 group-hover:bg-red-700">
                           <svg
                             class="w-4 h-4 sm:w-4.5 sm:h-4.5 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                             fill="none"
@@ -70,8 +70,8 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                           <div class="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
                             {project.skills.map((skill) => (
                               <span
-                                class={`px-2.5 sm:px-3 py-1 sm:py-1.5 bg-blue-600 text-white rounded-md sm:rounded-lg text-xs sm:text-sm font-medium transition-all duration-300 ${
-                                  project.link ? "group-hover:bg-blue-700" : ""
+                                class={`px-2.5 sm:px-3 py-1 sm:py-1.5 bg-red-600 text-white rounded-md sm:rounded-lg text-xs sm:text-sm font-medium transition-all duration-300 ${
+                                  project.link ? "group-hover:bg-red-700" : ""
                                 }`}
                               >
                                 {skill}
@@ -108,8 +108,8 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                           <div class="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
                             {project.skills.map((skill) => (
                               <span
-                                class={`px-2.5 sm:px-3 py-1 sm:py-1.5 bg-blue-600 text-white rounded-md sm:rounded-lg text-xs sm:text-sm font-medium transition-all duration-300 ${
-                                  project.link ? "group-hover:bg-blue-700" : ""
+                                class={`px-2.5 sm:px-3 py-1 sm:py-1.5 bg-red-600 text-white rounded-md sm:rounded-lg text-xs sm:text-sm font-medium transition-all duration-300 ${
+                                  project.link ? "group-hover:bg-red-700" : ""
                                 }`}
                               >
                                 {skill}

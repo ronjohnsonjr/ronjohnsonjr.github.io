@@ -3,12 +3,10 @@ export const siteConfig = {
   title: "Senior Software Development Engineer in Test (SDET) / Systems Engineer",
   description:
     "QA automation engineer and systems integration specialist with 20+ years spanning defense, SaaS, and cloud environments. Expert in designing scalable Python-based automation frameworks for regulated and security-sensitive systems.",
-  accentColor: "#1d4ed8",
+  accentColor: "#dc2626",
   social: {
     email: "johnsonjrre@gmail.com",
     phone: "443-668-1024",
-    linkedin: "https://www.linkedin.com/in/ronjohnsonjr/",
-    twitter: "https://x.com/ronjohnsonjr",
     github: "https://github.com/ronjohnsonjr",
   },
   aboutMe:
@@ -29,8 +27,8 @@ export const siteConfig = {
     {
       name: "Unified Test Automation Framework",
       description:
-        "Designed and implemented modular test automation frameworks using Pytest, Robot Framework, and Behave, consolidating multiple legacy test suites into a single reusable framework. Introduced modular libraries and reusable fixtures supporting multiple products with parallel execution and CI/CD integration.",
-      skills: ["Python", "Pytest", "Robot Framework", "Behave", "CI/CD"],
+        "Designed and implemented modular test automation frameworks using Pytest and Robot Framework, consolidating multiple legacy test suites into a single reusable framework. Introduced modular libraries and reusable fixtures supporting multiple products with parallel execution and CI/CD integration.",
+      skills: ["Python", "Pytest", "Robot Framework", "CI/CD"],
     },
     {
       name: "API Security & Compliance Testing Suite",
@@ -52,7 +50,7 @@ export const siteConfig = {
       dateRange: "Mar 2022 — Present",
       bullets: [
         "Lead automation initiatives for AWS-hosted distributed systems, combining backend, API, and UI coverage into unified regression pipelines.",
-        "Designed and implemented test automation frameworks using Pytest, Robot Framework, and Behave, introducing modular libraries and reusable fixtures to support multiple products.",
+        "Designed and implemented test automation frameworks using Pytest and Robot Framework, introducing modular libraries and reusable fixtures to support multiple products.",
         "Integrated secure API and regression testing into GitLab CI/CD pipelines with parallel execution, gating, and artifact retention to accelerate release readiness.",
         "Automated REST and GraphQL validation for authentication, authorization, rate-limiting, schema versioning, and error handling; implemented token validation and fuzz testing to align with OWASP API Top 10.",
         "Coordinated verification and validation (V&V) documentation supporting compliance deliverables; produced traceable test evidence aligned with regulatory expectations for safety-critical systems.",
