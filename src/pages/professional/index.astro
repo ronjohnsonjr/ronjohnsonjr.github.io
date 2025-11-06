@@ -1,0 +1,264 @@
+---
+import { professionalProfile, siteConfig } from "../../config";
+import "../../styles/global.css";
+
+const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials, experience, contact } =
+  professionalProfile;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{siteConfig.name} — Fractional Engineering Leadership</title>
+    <meta
+      name="description"
+      content="Fractional engineering leadership, design system strategy, and developer experience consulting with Sena Najin."
+    />
+    <link rel="canonical" href="https://sennajin.github.io/professional/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header class="border-b border-slate-200 bg-white/90 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="/" class="text-lg font-semibold tracking-tight text-slate-900">
+          {siteConfig.name}
+        </a>
+        <div class="flex items-center gap-4 text-sm font-medium text-slate-600">
+          <a href="#services" class="transition-colors hover:text-slate-900">Services</a>
+          <a href="#case-studies" class="transition-colors hover:text-slate-900">Case studies</a>
+          <a href="#experience" class="transition-colors hover:text-slate-900">Experience</a>
+          <a href="#contact" class="transition-colors hover:text-slate-900">Contact</a>
+          <a
+            href={`mailto:${contact.email}?subject=Discovery%20Call%20with%20Sena`}
+            class="inline-flex items-center rounded-full border border-slate-300 px-3 py-1.5 font-semibold text-slate-900 transition-colors hover:border-slate-400"
+          >
+            Start a conversation
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pb-24">
+      <section class="relative overflow-hidden bg-white">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
+        <div class="relative mx-auto flex max-w-5xl flex-col gap-10 px-6 py-20 text-white">
+          <div class="max-w-3xl space-y-6">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs uppercase tracking-[0.2em]">
+              <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+              {hero.eyebrow}
+            </span>
+            <h1 class="text-pretty text-4xl font-semibold sm:text-5xl lg:text-6xl">
+              {hero.title}
+            </h1>
+            <p class="text-pretty text-base leading-7 text-slate-200 sm:text-lg">
+              {hero.subtitle}
+            </p>
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a
+                href={hero.ctas.primary.href}
+                class="inline-flex items-center justify-center rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:bg-emerald-300"
+              >
+                {hero.ctas.primary.label}
+              </a>
+              <a
+                href={hero.ctas.secondary.href}
+                class="inline-flex items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white"
+              >
+                {hero.ctas.secondary.label}
+              </a>
+            </div>
+          </div>
+          <div class="grid gap-6 sm:grid-cols-2">
+            <div class="rounded-2xl bg-white/10 p-6">
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-300">Availability</p>
+              <p class="mt-2 text-lg font-semibold text-white">{hero.availability}</p>
+            </div>
+            <div class="rounded-2xl bg-white/10 p-6">
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-300">Location</p>
+              <p class="mt-2 text-lg font-semibold text-white">{hero.location}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto mt-20 max-w-5xl px-6">
+        <div class="grid gap-8 md:grid-cols-3">
+          {differentiators.map((item) => (
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+              <h2 class="text-lg font-semibold text-slate-900">{item.title}</h2>
+              <p class="mt-3 text-sm leading-6 text-slate-600">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="mx-auto mt-20 max-w-5xl px-6">
+        <div class="grid gap-6 rounded-3xl border border-slate-200 bg-white p-8 sm:grid-cols-2">
+          {metrics.map((metric) => (
+            <div class="rounded-2xl bg-slate-50 p-6">
+              <p class="text-4xl font-semibold text-slate-900">{metric.value}</p>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-slate-500">{metric.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="services" class="mx-auto mt-24 max-w-5xl px-6">
+        <div class="space-y-6">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-semibold text-slate-900">Ways we can partner</h2>
+            <p class="text-base text-slate-600">
+              Engagements are tailored around measurable outcomes. Every collaboration blends strategic planning with hands-on support.
+            </p>
+          </div>
+          <div class="space-y-6">
+            {serviceLines.map((service) => (
+              <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 class="text-2xl font-semibold text-slate-900">{service.name}</h3>
+                  <span class="inline-flex items-center rounded-full bg-slate-100 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-700">
+                    Advisory + Delivery
+                  </span>
+                </div>
+                <p class="mt-4 text-sm leading-6 text-slate-600">{service.description}</p>
+                <ul class="mt-6 space-y-2">
+                  {service.outcomes.map((outcome) => (
+                    <li class="flex items-start gap-3 text-sm text-slate-700">
+                      <span class="mt-1 inline-flex h-2 w-2 flex-shrink-0 rounded-full bg-emerald-400"></span>
+                      <span>{outcome}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="case-studies" class="mx-auto mt-24 max-w-5xl px-6">
+        <div class="space-y-10">
+          <div>
+            <h2 class="text-3xl font-semibold text-slate-900">Selected collaborations</h2>
+            <p class="mt-2 text-base text-slate-600">
+              Highlights from recent platform, design system, and developer experience engagements.
+            </p>
+          </div>
+          <div class="space-y-8">
+            {caseStudies.map((study) => (
+              <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-shadow hover:shadow-lg">
+                <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 class="text-2xl font-semibold text-slate-900">{study.client}</h3>
+                  <span class="text-sm font-medium text-emerald-500">Impact Snapshot</span>
+                </div>
+                <p class="mt-4 text-sm leading-6 text-slate-600">{study.summary}</p>
+                <ul class="mt-6 grid gap-3 sm:grid-cols-3">
+                  {study.impact.map((item) => (
+                    <li class="rounded-2xl bg-slate-50 p-4 text-sm font-medium text-slate-700">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto mt-24 max-w-5xl px-6">
+        <div class="rounded-3xl border border-slate-200 bg-white p-8">
+          <h2 class="text-3xl font-semibold text-slate-900">What partners say</h2>
+          <div class="mt-8 grid gap-6 md:grid-cols-2">
+            {testimonials.map((testimonial) => (
+              <blockquote class="rounded-2xl border border-slate-100 bg-slate-50 p-6 text-sm text-slate-700">
+                <p class="text-pretty leading-6">“{testimonial.quote}”</p>
+                <footer class="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">
+                  {testimonial.name} • {testimonial.role}
+                </footer>
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="mx-auto mt-24 max-w-5xl px-6">
+        <div class="space-y-6">
+          <div>
+            <h2 class="text-3xl font-semibold text-slate-900">Experience in the work</h2>
+            <p class="mt-2 text-base text-slate-600">
+              The engagements above are grounded in an operator background building resilient teams and platforms.
+            </p>
+          </div>
+          <div class="relative">
+            <div class="absolute left-4 top-0 bottom-0 hidden w-px bg-slate-200 sm:block"></div>
+            <div class="space-y-8">
+              {experience.map((role) => (
+                <div class="relative rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+                  <div class="sm:absolute sm:-left-1 sm:top-8 sm:flex sm:h-4 sm:w-4 sm:-translate-x-1/2 sm:items-center sm:justify-center">
+                    <span class="hidden h-3 w-3 rounded-full border-2 border-slate-200 bg-white sm:inline-block"></span>
+                  </div>
+                  <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                    <div>
+                      <h3 class="text-xl font-semibold text-slate-900">{role.title}</h3>
+                      <p class="text-sm font-medium text-emerald-500">{role.company}</p>
+                    </div>
+                    <span class="text-xs uppercase tracking-[0.2em] text-slate-500">{role.dateRange}</span>
+                  </div>
+                  <ul class="mt-4 space-y-2">
+                    {role.bullets.map((bullet) => (
+                      <li class="flex items-start gap-3 text-sm text-slate-700">
+                        <span class="mt-1 inline-flex h-1.5 w-1.5 flex-shrink-0 rounded-full bg-emerald-400"></span>
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto mt-24 max-w-4xl px-6">
+        <div class="rounded-3xl border border-slate-200 bg-slate-900 p-10 text-white">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div class="max-w-2xl space-y-4">
+              <h2 class="text-3xl font-semibold text-white">{contact.headline}</h2>
+              <p class="text-sm leading-6 text-slate-200">{contact.summary}</p>
+            </div>
+            <div class="flex flex-col gap-3">
+              <a
+                href={`mailto:${contact.email}`}
+                class="inline-flex items-center justify-center rounded-full bg-emerald-400 px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:bg-emerald-300"
+              >
+                Email {siteConfig.name.split(" ")[0]}
+              </a>
+              <a
+                href={contact.calendly}
+                class="inline-flex items-center justify-center rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white"
+              >
+                Schedule on Calendly
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-6">
+      <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 text-sm text-slate-600 sm:flex-row">
+        <span>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</span>
+        <div class="flex items-center gap-4">
+          <a href="/" class="transition-colors hover:text-slate-900">Classic portfolio</a>
+          <a href="mailto:hello@sennajin.dev" class="transition-colors hover:text-slate-900">hello@sennajin.dev</a>
+          <a href="https://www.linkedin.com/in/sennajin/" class="transition-colors hover:text-slate-900">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
