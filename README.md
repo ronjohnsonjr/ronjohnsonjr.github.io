@@ -1,4 +1,4 @@
-# Sena Najin Portfolio
+# Ronald Johnson, Jr. Portfolio
 
 This repository powers [sennajin.github.io](https://sennajin.github.io/) using the
 [DevPortfolio](https://github.com/RyanFitzgerald/devportfolio) Astro template. The initial
@@ -24,8 +24,3 @@ npm run build
 
 The build command outputs static assets to `dist/`, which can be deployed to GitHub Pages or
 any static hosting provider.
-
-## Credits
-
-- Template created by [Ryan Fitzgerald](https://github.com/RyanFitzgerald)
-- Licensed under the [MIT License](LICENSE.md)
