@@ -1,14 +1,14 @@
 export const siteConfig = {
-  name: "Sena Najin",
+  name: "Ronald Johnson, Jr.",
   title: "Staff Software Engineer",
   description:
-    "Portfolio website of Sena Najin, a staff software engineer focused on developer experience, design systems, and resilient teams.",
+    "Portfolio website of Ronald Johnson, Jr., a staff software engineer focused on developer experience, design systems, and resilient teams.",
   accentColor: "#1d4ed8",
   social: {
-    email: "hello@sennajin.dev",
-    linkedin: "https://www.linkedin.com/in/sennajin/",
-    twitter: "https://x.com/sennajin",
-    github: "https://github.com/sennajin",
+    email: "hello@ronjohnsonjr.dev",
+    linkedin: "https://www.linkedin.com/in/ronjohnsonjr/",
+    twitter: "https://x.com/ronjohnsonjr",
+    github: "https://github.com/ronjohnsonjr",
   },
   aboutMe:
     "I'm a staff software engineer who thrives on building thoughtful developer experiences. After a decade of leading cross-functional teams, I'm currently focused on design systems, platform modernization, and mentorship programs that elevate engineers at every level.",
@@ -27,21 +27,21 @@ export const siteConfig = {
       name: "Northstar Design System",
       description:
         "Led the multi-quarter rebuild of Northstar, the company design system. Delivered a component library with accessibility guardrails, design tokens, and documentation that improved adoption to 87% across all product squads.",
-      link: "https://github.com/sennajin/northstar",
+      link: "https://github.com/ronjohnsonjr/northstar",
       skills: ["TypeScript", "Storybook", "Accessibility", "Design Tokens"],
     },
     {
       name: "Developer Portal Refresh",
       description:
         "Reimagined the internal developer portal to surface deployment health, incident runbooks, and API contracts in one place. Reduced time-to-diagnosis for production issues by 35% while improving onboarding satisfaction scores.",
-      link: "https://github.com/sennajin/dev-portal",
+      link: "https://github.com/ronjohnsonjr/dev-portal",
       skills: ["React", "Node.js", "GraphQL", "DX"],
     },
     {
       name: "Experimentation Platform",
       description:
         "Architected a feature flag and experimentation platform enabling product teams to run A/B tests safely. Introduced guardrails for progressive delivery and saved 20+ engineer hours per launch.",
-      link: "https://github.com/sennajin/experimentation-platform",
+      link: "https://github.com/ronjohnsonjr/experimentation-platform",
       skills: ["Go", "Kubernetes", "Feature Flags", "Observability"],
     },
   ],
@@ -67,17 +67,16 @@ export const siteConfig = {
       ],
     },
   ],
-  education: [
-    {
-      degree: "B.S. Computer Science",
-      school: "Northridge University",
-      dateRange: "2013 — 2017",
-      achievements: [
-        "Graduated magna cum laude.",
-        "Led the ACM student chapter and organized regional hackathons.",
-        "Research assistant for human-computer interaction lab focusing on accessible interfaces.",
-      ],
-    },
+  certifications: [
+    // Add your certifications here
+    // Example:
+    // {
+    //   name: "AWS Certified Solutions Architect",
+    //   issuer: "Amazon Web Services",
+    //   dateRange: "2023",
+    //   credentialId: "ABC123XYZ",
+    //   link: "https://aws.amazon.com/verification",
+    // },
   ],
 };
 
@@ -86,17 +85,17 @@ export const professionalProfile = {
     eyebrow: "Fractional Engineering Leadership",
     title: "Partner for design systems, developer platforms, and resilient teams.",
     subtitle:
-      "Sena Najin is a staff-level engineer specializing in scalable design systems, API platforms, and the rituals that keep high-growth teams performing.",
+      "Ronald Johnson, Jr. is a staff-level engineer specializing in scalable design systems, API platforms, and the rituals that keep high-growth teams performing.",
     availability: "Currently accepting Q3 2025 engagements",
     location: "Remote • New York, NY",
     ctas: {
       primary: {
         label: "Book a discovery call",
-        href: "mailto:hello@sennajin.dev?subject=Discovery%20Call%20with%20Sena",
+        href: "mailto:hello@ronjohnsonjr.dev?subject=Discovery%20Call%20with%20Ron",
       },
       secondary: {
         label: "Download 1-pager",
-        href: "https://sennajin.github.io/assets/sena-najin-1-pager.pdf",
+        href: "https://ronjohnsonjr.github.io/assets/ron-johnson-jr-1-pager.pdf",
       },
     },
   },
@@ -180,13 +179,13 @@ export const professionalProfile = {
   testimonials: [
     {
       quote:
-        "Sena has an incredible ability to translate ambiguous platform problems into actionable roadmaps. Our teams ship faster because she taught us how to invest in tooling the right way.",
+        "Ron has an incredible ability to translate ambiguous platform problems into actionable roadmaps. Our teams ship faster because he taught us how to invest in tooling the right way.",
       name: "Priya Desai",
       role: "VP of Engineering, Waypoint Labs",
     },
     {
       quote:
-        "She built the rituals that make our design system sustainable—weekly office hours, paired migrations, and a governance model folks actually respect.",
+        "He built the rituals that make our design system sustainable—weekly office hours, paired migrations, and a governance model folks actually respect.",
       name: "Logan Pierce",
       role: "Director of Product Design, Atlas Collective",
     },
@@ -197,6 +196,6 @@ export const professionalProfile = {
     summary:
       "Send a note with the challenges you're facing or upcoming initiatives. I'll follow up with a curated plan and a working session agenda.",
     email: siteConfig.social.email,
-    calendly: "https://cal.com/sena-najin/discovery",
+    calendly: "https://cal.com/ronjohnsonjr/discovery",
   },
 };

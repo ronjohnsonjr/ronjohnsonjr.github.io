@@ -15,9 +15,9 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
     <title>{siteConfig.name} — Fractional Engineering Leadership</title>
     <meta
       name="description"
-      content="Fractional engineering leadership, design system strategy, and developer experience consulting with Sena Najin."
+      content="Fractional engineering leadership, design system strategy, and developer experience consulting with Ron Johnson Jr."
     />
-    <link rel="canonical" href="https://sennajin.github.io/professional/" />
+    <link rel="canonical" href="https://ronjohnsonjr.github.io/professional/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,7 +37,7 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
           <a href="#experience" class="transition-colors hover:text-slate-900">Experience</a>
           <a href="#contact" class="transition-colors hover:text-slate-900">Contact</a>
           <a
-            href={`mailto:${contact.email}?subject=Discovery%20Call%20with%20Sena`}
+            href={`mailto:${contact.email}?subject=Discovery%20Call%20with%20Ron`}
             class="inline-flex items-center rounded-full border border-slate-300 px-3 py-1.5 font-semibold text-slate-900 transition-colors hover:border-slate-400"
           >
             Start a conversation
@@ -255,8 +255,22 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
         <span>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</span>
         <div class="flex items-center gap-4">
           <a href="/" class="transition-colors hover:text-slate-900">Classic portfolio</a>
-          <a href="mailto:hello@sennajin.dev" class="transition-colors hover:text-slate-900">hello@sennajin.dev</a>
-          <a href="https://www.linkedin.com/in/sennajin/" class="transition-colors hover:text-slate-900">LinkedIn</a>
+          {siteConfig.social?.email && (
+            <a
+              href={`mailto:${siteConfig.social.email}`}
+              class="transition-colors hover:text-slate-900"
+            >
+              {siteConfig.social.email}
+            </a>
+          )}
+          {siteConfig.social?.linkedin && (
+            <a
+              href={siteConfig.social.linkedin}
+              class="transition-colors hover:text-slate-900"
+            >
+              LinkedIn
+            </a>
+          )}
         </div>
       </div>
     </footer>

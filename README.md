@@ -1,9 +1,9 @@
-# Ronald Johnson, Jr. Portfolio
+# Ron Johnson Jr. Portfolio
 
-This repository powers [sennajin.github.io](https://ronjohnsonjr.github.io/) using the
+This repository powers [ronjohnsonjr.github.io](https://ronjohnsonjr.github.io/) using the
 [DevPortfolio](https://github.com/RyanFitzgerald/devportfolio) Astro template. The initial
 commit brings the template into this repo so we can iterate on the content and styling to
-match Sena's professional profile.
+match Ron's professional profile.
 
 ## Local development
 
@@ -14,7 +14,7 @@ npm run dev
 
 The site configuration lives in [`src/config.ts`](src/config.ts). Update the exported object
 to change personal information, sections, and accent colors. Removing items from the arrays
-(e.g., projects, experience, education) will hide those sections automatically.
+(e.g., projects, experience, certifications) will hide those sections automatically.
 
 ## Build for production
 
