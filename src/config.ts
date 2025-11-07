@@ -99,14 +99,14 @@ export const siteConfig = {
       issuer: "Amazon Web Services",
       dateRange: "",
       credentialId: "",
-      link: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+      link: "https://cp.certmetrics.com/amazon/en/public/verify/credential/c4d0a0540ea14ef29db277354caab6a1",
     },
     {
       name: "ISTQB Certified Tester – Foundation Level",
       issuer: "ISTQB",
       dateRange: "",
       credentialId: "",
-      link: "https://www.istqb.org/certification-path-root/foundation-level.html",
+      link: "https://atsqa.org/certified-testers/profile/e6a3f3bbd0fa4b10b0657f698fe527be",
     },
   ],
 };
