@@ -12,9 +12,9 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
   style={`--accent-color: ${siteConfig.accentColor}; background-color: #0A0A0A;`}
 >
   <!-- Navigation Bar -->
-  <nav class="fixed top-0 left-0 right-0 z-[9999] flex items-center justify-between mx-1 sm:mx-2 md:mx-3 lg:mx-4 py-2" style="z-index: 9999;">
+  <nav class="fixed top-0 left-0 right-0 z-[895] flex items-center justify-between mx-1 sm:mx-2 md:mx-3 lg:mx-4 py-2" style="z-index: 895;">
     <!-- Logo/Brand Section -->
-    <div>
+    <div style="position: relative; z-index: 895;">
       <a href="/" class="flex items-center gap-2 px-3 py-2 border rounded-3xl transition-all hover:opacity-80"
         style="border-color: #4B4E53; background-color: #0A0A0A;"
       >
@@ -29,8 +29,8 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
     </div>
 
     <!-- Center Navigation Links (Desktop) -->
-    <div class="hidden lg:flex lg:items-center">
-      <div class="flex items-center border rounded-3xl p-3" style="border-color: #4B4E53; background-color: #0A0A0A;">
+    <div class="hidden lg:flex lg:items-center" style="position: relative; z-index: 895;">
+      <div class="flex items-center border rounded-3xl p-3" style="border-color: #4B4E53; background-color: #0A0A0A; position: relative; z-index: 895;">
         <ul class="flex gap-5 text-base items-center" style="color: #EDF2F4;">
           <li>
             <a 
@@ -120,7 +120,7 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
     </div>
 
     <!-- Contact/Right Section (Desktop) -->
-    <div class="hidden lg:flex lg:items-center gap-5 text-base border rounded-3xl p-3" style="border-color: #4B4E53; background-color: #0A0A0A; color: #EDF2F4;">
+    <div class="hidden lg:flex lg:items-center gap-5 text-base border rounded-3xl p-3" style="border-color: #4B4E53; background-color: #0A0A0A; color: #EDF2F4; position: relative; z-index: 895;">
       <a 
         href={`mailto:${siteConfig.social?.email || ''}`}
         class="flex items-center gap-1 transition-all hover:opacity-80"
@@ -158,8 +158,8 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
   <!-- Mobile Menu Dropdown -->
   <div 
     id="mobile-menu"
-    class="hidden lg:hidden border-t absolute top-full left-0 right-0 z-[9999]"
-    style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px); z-index: 9999;"
+    class="hidden lg:hidden border-t absolute top-full left-0 right-0 z-[895]"
+    style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px); z-index: 895;"
   >
     <nav class="px-4 py-4">
       <ul class="space-y-4" style="color: #EDF2F4;">
