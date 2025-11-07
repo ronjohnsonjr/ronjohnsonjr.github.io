@@ -9,7 +9,7 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
 <header
   id="header"
   class="sticky top-0 left-0 right-0 z-50 transition-all duration-300"
-  style="background-color: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px);"
+  style="background-color: transparent;"
 >
   <nav class="flex items-center justify-between mx-1 sm:mx-2 md:mx-3 lg:mx-4 py-2">
     <!-- Logo/Brand Section -->
@@ -31,7 +31,7 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
               href="/" 
               class="flex items-center gap-1 transition-all hover:opacity-80"
               style={`color: #EDF2F4;`}
-              onmouseover={`this.style.color='${siteConfig.accentColor}';`}
+              onmouseover="this.style.color='#D71515';"
               onmouseout="this.style.color='#EDF2F4';"
             >
               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
               href="#about" 
               class="flex items-center gap-1 transition-all hover:opacity-80"
               style={`color: #EDF2F4;`}
-              onmouseover={`this.style.color='${siteConfig.accentColor}';`}
+              onmouseover="this.style.color='#D71515';"
               onmouseout="this.style.color='#EDF2F4';"
             >
               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -135,7 +135,7 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
   <div 
     id="mobile-menu"
     class="hidden lg:hidden border-t"
-    style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.98);"
+    style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px);"
   >
     <nav class="px-4 py-4">
       <ul class="space-y-4" style="color: #EDF2F4;">
