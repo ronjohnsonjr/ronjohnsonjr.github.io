@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Ronald Johnson Jr.",
+  name: "Ronald Johnson, Jr.",
   title: "Senior Software Development Engineer in Test (SDET) / Systems Engineer",
   description:
     "QA automation engineer and systems integration specialist with 20+ years spanning defense, SaaS, and cloud environments. Expert in designing scalable Python-based automation frameworks for regulated and security-sensitive systems.",
-  accentColor: "#650304", /* Blood red - darker, more readable */
+  accentColor: "#D71515", /* Bright red - more vibrant */
   social: {
     email: "johnsonjrre@gmail.com",
     phone: "443-668-1024",
