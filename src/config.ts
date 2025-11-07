@@ -100,6 +100,7 @@ export const siteConfig = {
       dateRange: "",
       credentialId: "",
       link: "https://cp.certmetrics.com/amazon/en/public/verify/credential/c4d0a0540ea14ef29db277354caab6a1",
+      badge: "/assets/certifications/aws-cloud-practitioner-badge.png",
     },
     {
       name: "ISTQB Certified Tester – Foundation Level",
@@ -107,6 +108,23 @@ export const siteConfig = {
       dateRange: "",
       credentialId: "",
       link: "https://atsqa.org/certified-testers/profile/e6a3f3bbd0fa4b10b0657f698fe527be",
+      badge: "/assets/certifications/istqb-foundation-badge.png",
+    },
+    {
+      name: "Postman API Fundamentals Student Expert",
+      issuer: "Postman",
+      dateRange: "",
+      credentialId: "",
+      link: "",
+      badge: "/assets/certifications/postman-api-fundamentals-badge.png",
+    },
+    {
+      name: "OWASP Top 10:2021 in Python",
+      issuer: "SecureFlag",
+      dateRange: "October 29, 2025",
+      credentialId: "79798aa4-1ecc-4834-9eba-a9e9d6702e87",
+      link: "https://www.secureflag.com/s?79798aa4-1ecc-4834-9eba-a9e9d6702e87",
+      badge: "/assets/certifications/secureflag-owasp-badge.png",
     },
   ],
 };
