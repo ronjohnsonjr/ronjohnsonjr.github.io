@@ -12,7 +12,7 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
   style={`--accent-color: ${siteConfig.accentColor}; background-color: #0A0A0A;`}
 >
   <!-- Navigation Bar -->
-  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between mx-1 sm:mx-2 md:mx-3 lg:mx-4 py-2">
+  <nav class="fixed top-0 left-0 right-0 z-[9999] flex items-center justify-between mx-1 sm:mx-2 md:mx-3 lg:mx-4 py-2" style="z-index: 9999;">
     <!-- Logo/Brand Section -->
     <div>
       <a href="/" class="flex items-center gap-2 px-3 py-2 border rounded-3xl transition-all hover:opacity-80"
@@ -158,8 +158,8 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
   <!-- Mobile Menu Dropdown -->
   <div 
     id="mobile-menu"
-    class="hidden lg:hidden border-t absolute top-full left-0 right-0 z-50"
-    style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px);"
+    class="hidden lg:hidden border-t absolute top-full left-0 right-0 z-[9999]"
+    style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.95); backdrop-filter: blur(10px); z-index: 9999;"
   >
     <nav class="px-4 py-4">
       <ul class="space-y-4" style="color: #EDF2F4;">
