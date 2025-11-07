@@ -1,5 +1,6 @@
 ---
 import { professionalProfile, siteConfig } from "../../config";
+import Header from "../../components/Header.astro";
 import "../../styles/global.css";
 
 const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials, experience, contact } =
@@ -25,28 +26,7 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
     />
   </head>
   <body style="background-color: #0A0A0A; color: #EDF2F4;">
-    <header class="border-b backdrop-blur-md" style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.9);">
-      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="/" class="text-lg font-semibold tracking-tight" style="color: #EDF2F4;">
-          {siteConfig.name}
-        </a>
-        <div class="flex items-center gap-4 text-sm font-medium" style="color: #4B4E53;">
-          <a href="#services" class="transition-colors" style="color: #4B4E53;" onmouseover="this.style.color='#EDF2F4';" onmouseout="this.style.color='#4B4E53';">Services</a>
-          <a href="#case-studies" class="transition-colors" style="color: #4B4E53;" onmouseover="this.style.color='#EDF2F4';" onmouseout="this.style.color='#4B4E53';">Case studies</a>
-          <a href="#experience" class="transition-colors" style="color: #4B4E53;" onmouseover="this.style.color='#EDF2F4';" onmouseout="this.style.color='#4B4E53';">Experience</a>
-          <a href="#contact" class="transition-colors" style="color: #4B4E53;" onmouseover="this.style.color='#EDF2F4';" onmouseout="this.style.color='#4B4E53';">Contact</a>
-          {/* <a
-            href={`mailto:${contact.email}?subject=Discovery%20Call%20with%20Ron`}
-            class="inline-flex items-center rounded-full border px-3 py-1.5 font-semibold transition-colors"
-            style="border-color: #4B4E53; color: #EDF2F4;"
-            onmouseover="this.style.borderColor='#EDF2F4';"
-            onmouseout="this.style.borderColor='#4B4E53';"
-          >
-            Start a conversation
-          </a> */}
-        </div>
-      </nav>
-    </header>
+    <Header />
 
     <main class="pb-24">
       <section class="relative overflow-hidden" style="background-color: #0A0A0A;">
@@ -131,7 +111,7 @@ const { hero, differentiators, metrics, serviceLines, caseStudies, testimonials,
             {serviceLines.map((service) => (
               <div class="rounded-3xl border p-8 shadow-sm transition-shadow hover:shadow-md" style="border-color: #4B4E53; background-color: #4B4E53;">
                 <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                  <h3 class="text-2xl font-semibold" style="color: #EDF2F4;">{service.name}</h3>
+                  <h3 class="text-2xl font-semibold" style={`color: ${siteConfig.accentColor};`}>{service.name}</h3>
                   <span class="inline-flex items-center rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em]" style="background-color: #0A0A0A; color: #EDF2F4;">
                     Advisory + Delivery
                   </span>
