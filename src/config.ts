@@ -121,8 +121,8 @@ export const siteConfig = {
     {
       name: "OWASP Top 10:2021 in Python",
       issuer: "SecureFlag",
-      dateRange: "October 29, 2025",
-      credentialId: "79798aa4-1ecc-4834-9eba-a9e9d6702e87",
+      dateRange: "",
+      credentialId: "",
       link: "https://www.secureflag.com/s?79798aa4-1ecc-4834-9eba-a9e9d6702e87",
       badge: "/assets/certifications/secureflag-owasp-badge.png",
     },
