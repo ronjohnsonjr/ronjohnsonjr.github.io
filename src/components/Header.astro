@@ -11,11 +11,11 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
   class="sticky top-0 left-0 right-0 z-50 transition-all duration-300"
   style="background-color: transparent;"
 >
-  <nav class="flex items-center justify-between mx-1 sm:mx-2 md:mx-3 lg:mx-4 py-2">
+  <nav class="flex items-center justify-between mx-1 sm:mx-2 md:mx-3 lg:mx-4">
     <!-- Logo/Brand Section -->
     <div>
       <a href="/" class="flex items-center gap-2 px-3 py-2 border rounded-3xl transition-all hover:opacity-80"
-        style="border-color: #4B4E53;"
+        style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.6);"
       >
         <div class="w-3 h-3 rounded-3xl sm:w-4 sm:h-4" style={`background-color: ${siteConfig.accentColor};`}></div>
         <span class="text-md sm:text-lg" style="color: #EDF2F4;">ronjohnsonjr</span>
@@ -24,7 +24,7 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
 
     <!-- Center Navigation Links (Desktop) -->
     <div class="hidden lg:flex lg:items-center">
-      <div class="flex items-center border rounded-3xl p-3" style="border-color: #4B4E53;">
+      <div class="flex items-center border rounded-3xl p-3" style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.6);">
         <ul class="flex gap-5 text-base items-center" style="color: #EDF2F4;">
           <li>
             <a 
@@ -47,7 +47,7 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
                   href="#projects" 
                   class="flex items-center gap-1 transition-all hover:opacity-80"
                   style={`color: #EDF2F4;`}
-                  onmouseover={`this.style.color='${siteConfig.accentColor}';`}
+                  onmouseover="this.style.color='#D71515';"
                   onmouseout="this.style.color='#EDF2F4';"
                 >
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
                   href="#experience" 
                   class="flex items-center gap-1 transition-all hover:opacity-80"
                   style={`color: #EDF2F4;`}
-                  onmouseover={`this.style.color='${siteConfig.accentColor}';`}
+                  onmouseover="this.style.color='#D71515';"
                   onmouseout="this.style.color='#EDF2F4';"
                 >
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -114,12 +114,12 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
     </div>
 
     <!-- Contact/Right Section (Desktop) -->
-    <div class="hidden lg:flex lg:items-center gap-5 text-base border rounded-3xl p-3" style="border-color: #4B4E53; color: #EDF2F4;">
+    <div class="hidden lg:flex lg:items-center gap-5 text-base border rounded-3xl p-3" style="border-color: #4B4E53; background-color: rgba(10, 10, 10, 0.6); color: #EDF2F4;">
       <a 
         href={`mailto:${siteConfig.social?.email || ''}`}
         class="flex items-center gap-1 transition-all hover:opacity-80"
         style={`color: #EDF2F4;`}
-        onmouseover={`this.style.color='${siteConfig.accentColor}';`}
+        onmouseover="this.style.color='#D71515';"
         onmouseout="this.style.color='#EDF2F4';"
       >
         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">

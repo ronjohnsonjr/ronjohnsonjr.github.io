@@ -176,8 +176,16 @@ import { siteConfig } from "../config";
       </div>
       </div>
       
-      <!-- Right side: About Me text -->
-      <div class="animate-fade-in animation-delay-400">
+      <!-- Right side: Photo and About Me text -->
+      <div class="animate-fade-in animation-delay-400 space-y-6">
+        <div class="flex justify-center lg:justify-end">
+          <img
+            src="/profile-photo.png"
+            alt={siteConfig.name}
+            class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover border-2"
+            style="border-color: #4B4E53;"
+          />
+        </div>
         <p class="text-base sm:text-lg md:text-xl leading-relaxed" style="color: #EDF2F4;">
           {siteConfig.aboutMe}
         </p>
