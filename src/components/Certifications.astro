@@ -19,61 +19,57 @@ const hasCertifications = siteConfig.certifications && siteConfig.certifications
           </div>
 
           <div class="lg:col-span-8">
-            <div class="space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               {siteConfig.certifications.map((cert) => (
-                <div class="rounded-lg shadow-sm border p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300"
+                <div class="rounded-lg shadow-sm border p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300 flex flex-col"
                   style="background-color: #4B4E53; border-color: #4B4E53;"
                 >
-                  <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div class="flex flex-col items-center text-center mb-4">
                     {cert.badge && (
-                      <div class="flex-shrink-0">
+                      <div class="mb-4">
                         <img
                           src={cert.badge}
                           alt={`${cert.name} badge`}
-                          class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-contain"
+                          class="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 object-contain mx-auto"
                         />
                       </div>
                     )}
-                    <div class="flex-1">
-                      <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold" style="color: #EDF2F4;">
-                            {cert.name}
-                          </h3>
-                          <p
-                            class="text-base sm:text-lg"
-                            style={`color: ${siteConfig.accentColor}`}
-                          >
-                            {cert.issuer}
-                          </p>
-                        </div>
-                        {cert.dateRange && (
-                          <span class="text-xs sm:text-sm mt-2 sm:mt-0" style="color: #EDF2F4;">
-                            {cert.dateRange}
-                          </span>
-                        )}
-                      </div>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-2" style="color: #EDF2F4;">
+                      {cert.name}
+                    </h3>
+                    <p
+                      class="text-base sm:text-lg mb-2"
+                      style={`color: ${siteConfig.accentColor}`}
+                    >
+                      {cert.issuer}
+                    </p>
+                    {cert.dateRange && (
+                      <span class="text-xs sm:text-sm" style="color: #EDF2F4;">
+                        {cert.dateRange}
+                      </span>
+                    )}
+                  </div>
 
-                      {cert.credentialId && (
-                        <p class="text-sm mb-2" style="color: #EDF2F4;">
-                          Credential ID: <span class="font-mono">{cert.credentialId}</span>
-                        </p>
-                      )}
+                  <div class="mt-auto pt-4 border-t" style="border-color: #4B4E53;">
+                    {cert.credentialId && (
+                      <p class="text-xs mb-2 text-center" style="color: #EDF2F4;">
+                        <span class="font-mono">{cert.credentialId}</span>
+                      </p>
+                    )}
 
-                      {cert.link && (
-                        <a
-                          href={cert.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="text-sm underline"
-                          style="color: #EDF2F4;"
-                          onmouseover="this.style.color='#D71515';"
-                          onmouseout="this.style.color='#EDF2F4';"
-                        >
-                          View credential
-                        </a>
-                      )}
-                    </div>
+                    {cert.link && (
+                      <a
+                        href={cert.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-sm underline block text-center"
+                        style="color: #EDF2F4;"
+                        onmouseover="this.style.color='#D71515';"
+                        onmouseout="this.style.color='#EDF2F4';"
+                      >
+                        View credential
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}
